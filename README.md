@@ -1,3 +1,5 @@
+🚧 under contruction 🚧 
+
 # Algorithms CheetSheet
 a quick guide and study notes for basic algorithms. basically, my summary of algorithms for core comp sci classes i tooked at the college.
 
@@ -5,11 +7,13 @@ a quick guide and study notes for basic algorithms. basically, my summary of alg
 me. If you find any mistakes (syntax, logic, or grammar), criticisms are always welcomed! Feel free to reach out to me here: choikj0903@gmail.com
 
 ## Table of Content
-1. [Algorithm Basics]
-\*\*under construction\*\*
+* [Algorithm Basics](#algorithm-basics)
+  * [Iterative Algorithms](#iterative-algorithm)
+  * [Recursive Algorithms](#recursive-algorithm)
+
 
 ## Algorithm Basics
-### Iterative Algorithms
+### Iterative Algorithm
 An algorithm that performs number of steps repeatedly for a finite number of times. 
 * Each repetition is called **iteration**.
 * Uses looping statement like **for** and **while**.
@@ -19,13 +23,46 @@ An algorithm that performs number of steps repeatedly for a finite number of tim
 ### Recursive Algorithm
 An algorithm that calls itself.
 * Recursive alorithm is divided into two parts: a **recursive case** and a **base case**.
-* **Recursive case** is a condition where the recursion is triggered.
+* **Recursive case** is a condition where a recursion is triggered.
 * **Base case** is a condition that stops the recursion and evaluates the result.
 * Often used in Depth First Search
 
 ## Search Algorithms
-### Linear Search
-* A very
+### Linear Search / Sequential Search
+A very simple searching algorithm. It starts from one end checking every element until the desired element is found.
+* It can be performed in a unsorted list.
+* Time Complexity : **O(n)**
+```python
+def LinearSearch(array, key):
+  for i, elem in enumerate(array):
+    if(array[i] == key):
+      return i
+      
+  return -1
+```
 
+### Binary Search
+A search algorithm where it repeatedly divides the search interval in half until the desired element is found or the interval is empty.
+* It can only be performed in a sorted list.
+* Time Complexity : **O(log n)**
+```python
+def LinearSearch(array, key):
+  left = 0
+  right = len(array)
+  mid = 0
 
-binary search
+  while left <= right:
+    mid = (left+right) // 2
+
+    if array[mid] < key:
+      left = mid + 1
+    
+    elif array[mid] > key:
+      right = mid - 1
+
+    else:
+      return mid
+
+  return -1
+ ```
+  
