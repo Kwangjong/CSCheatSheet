@@ -1,4 +1,4 @@
-# AlgorithmsCheetSheet
+# Algorithms CheetSheet
 a quick guide and study notes for basic algorithms. basically, my summary of algorithms for core comp sci classes i tooked at the college.
 
 ## Author
