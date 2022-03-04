@@ -5,6 +5,7 @@ a quick guide and study notes for basic algorithms. basically, my summary of alg
 me. If you find any mistakes (syntax, logic, or grammar), criticisms are always welcomed! Feel free to reach out to me here: choikj0903@gmail.com
 
 ## Table of Content
+1. [Algorithm Basics]
 \*\*under construction\*\*
 
 ## Algorithm Basics
