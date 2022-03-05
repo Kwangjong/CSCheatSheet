@@ -30,7 +30,7 @@ An algorithm that calls itself.
 ## Search Algorithms
 ### Linear Search / Sequential Search
 A very simple searching algorithm. It starts from one end checking every element until the desired element is found.
-* It can be performed in a unsorted list.
+* It can be performed in an unsorted list.
 * Time Complexity : **O(n)**
 ```python
 def LinearSearch(array, key):
@@ -42,7 +42,7 @@ def LinearSearch(array, key):
 ```
 
 ### Binary Search
-A search algorithm where it repeatedly divides the search interval in half until the desired element is found or the interval is empty.
+A search algorithm that repeatedly divides the search interval in half until the desired element is found or the interval is empty.
 * It can only be performed in a sorted list.
 * Time Complexity : **O(log n)**
 ```python
