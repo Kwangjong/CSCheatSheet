@@ -52,7 +52,7 @@ Time Complexity:
 * Append/Prepend: O(1)
 * Delete: O(N)
 
-[Implementation](##linked-list-1)
+[Implementation](#linked-list-1)
 
 
 ## Stack
