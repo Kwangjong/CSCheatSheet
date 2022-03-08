@@ -4,13 +4,15 @@
 a quick guide and study notes for basic algorithms. basically, my summary of algorithms for core comp sci classes i tooked at the college.
 
 ## Author
-me. If you find any mistakes (syntax, logic, or grammar), criticisms are always welcomed! Feel free to reach out to me here: choikj0903@gmail.com
+me. -- If you find any mistakes (syntax, logic, or grammar), criticisms are always welcomed! Feel free to reach out to me here: choikj0903@gmail.com
 
 ## Table of Content
 * [Algorithm Basics](#algorithm-basics)
   * [Iterative Algorithms](#iterative-algorithm)
   * [Recursive Algorithms](#recursive-algorithm)
-
+* [Search Algorithms](#search-algorithms)
+  * [Linear Search](#linear-search--sequential-search)
+  * [Binary Search](#binary-search)
 
 ## Algorithm Basics
 ### Iterative Algorithm
