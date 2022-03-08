@@ -1,18 +1,58 @@
 🚧 under contruction 🚧 
 
-# Algorithms CheetSheet
-a quick guide and study notes for basic algorithms. basically, my summary of algorithms for core comp sci classes i tooked at the college.
+# Computer Science CheetSheet
+a quick guide and study notes for basic algorithms, datastructure, and etc. basically, my summary of algorithms for core comp sci classes i tooked at the college.
+Python si used for the example codes.
 
-## Author
+# Author
 me. -- If you find any mistakes (syntax, logic, or grammar), criticisms are always welcomed! Feel free to reach out to me here: choikj0903@gmail.com
 
-## Table of Content
+# Table of Content
+# Programming Basics
+* [Data Structure Basics](#data-structure-basics)
 * [Algorithm Basics](#algorithm-basics)
   * [Iterative Algorithms](#iterative-algorithm)
   * [Recursive Algorithms](#recursive-algorithm)
 * [Search Algorithms](#search-algorithms)
   * [Linear Search](#linear-search--sequential-search)
   * [Binary Search](#binary-search)
+
+## Data Structure Basics
+***Data Structure*** is a way of organizing data in a computer efficiently. Different data structures are used according to the purpose so that a computer can effectively load and store data.
+
+***Abstract Data Type (ADT)*** is a data type described by pre-defined using user operation such as "insert data at the rear". ***ADT*** only provides what operations are defined, not how the operations are implemented. For example, ***Stack*** is a ***abstract data type***. ***Stack*** is defined by ***push()*** which inserts an item at the top of the stack and ***pop()*** which gets top-most item out of the stack.
+
+## Array / List
+***Array*** or ***List*** stores data in sequential order. Each item can be accessed using an **index** usually starting from 0.
+
+Time Complexity:
+* Indexing: O(1)
+* Searching: O(n)
+
+## Linked List
+***Linked List*** is a series of entries that stores the value and a pointer to the next entry. Each entry is called ***Node***. Physical placement of the ***Nodes*** does not have to be sequential.
+
+Time Complexity:
+* indexing: O(n)
+* Searching: O(n)
+* Append/Prepend: O(1)
+
+## Stack
+**Stack** is a ADT that is described by Last-In-Fist-Out(LIFO) behavior. It can be implemented using both **Array** or **Linked List**
+
+## Queue
+
+## HashTable, HashMap
+
+## Tree
+
+## Binary Tree
+
+## Binary Search Tree
+
+## AVL Tree
+
+## Graph
 
 ## Algorithm Basics
 ### Iterative Algorithm
