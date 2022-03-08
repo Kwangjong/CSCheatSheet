@@ -2,7 +2,7 @@
 
 # Computer Science CheetSheet
 a quick guide and study notes for basic algorithms, datastructure, and etc. basically, my summary of algorithms for core comp sci classes i tooked at the college.
-Python si used for the example codes.
+Python is used for the example codes.
 
 # Author
 me. -- If you find any mistakes (syntax, logic, or grammar), criticisms are always welcomed! Feel free to reach out to me here: choikj0903@gmail.com
@@ -62,14 +62,14 @@ Time Complexity:
 * ***push()***: insert an element at the top of the stack
 * ***pop()***: return and remove an element at the top of the stack
 
-[Implementation](#stack-1)
+[Implementation](implementation/stack.py)
 
 ## Queue
 **Queue** is a ADT that is described by First-In-First-Out(FIFO) behavior. It can be implemented using both **Array** or **Linked List**
 * ***enque()***: insert an element at the end of the queue
 * ***deque()***: return and remove an element at the head of queue
 
-[Implementation](#stack-1)
+[Implementation](implementation/queue.py)
 
 ## HashTable, HashMap
 
