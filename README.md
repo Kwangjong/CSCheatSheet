@@ -11,6 +11,10 @@ me. -- If you find any mistakes (syntax, logic, or grammar), criticisms are alwa
 * [Programming Basics](#programming-basics)
 * [Data Structure](#data-structure)
   * [Data Structure Basics](#data-structure-basics)
+  * [Array](#array--list)
+  * [Linked List](#linked-list)
+  * [Stack](#stack)
+  * [Queue](#queue)
 * [Algorithm Basics](#algorithm-basics)
   * [Iterative Algorithms](#iterative-algorithm)
   * [Recursive Algorithms](#recursive-algorithm)
@@ -25,10 +29,10 @@ me. -- If you find any mistakes (syntax, logic, or grammar), criticisms are alwa
 ## Data Structure Basics
 ***Data Structure*** is a way of organizing data in a computer efficiently. Different data structures are used according to the purpose so that a computer can effectively load and store data.
 
-***Abstract Data Type (ADT)*** is a data type described by pre-defined using user operation such as "insert data at the rear". ***ADT*** only provides what operations are defined, not how the operations are implemented. For example, ***Stack*** is a ***abstract data type***. ***Stack*** is defined by ***push()*** which inserts an item at the top of the stack and ***pop()*** which gets top-most item out of the stack.
+***Abstract Data Type (ADT)*** is a data type described by pre-defined using user operation such as "insert data at the rear". ***ADT*** only provides what operations are defined, not how the operations are implemented. For example, ***Stack*** is a ***abstract data type***. ***Stack*** is defined by ***push()*** which inserts an element at the top of the stack and ***pop()*** which gets top-most element out of the stack.
 
 ## Array / List
-***Array*** or ***List*** stores data in sequential order. Each item can be accessed using an **index** usually starting from 0.
+***Array*** or ***List*** stores data in sequential order. Each element can be accessed using an **index** usually starting from 0.
 
 Time Complexity:
 * Indexing: O(1)
@@ -57,8 +61,17 @@ Time Complexity:
 
 ## Stack
 **Stack** is a ADT that is described by Last-In-Fist-Out(LIFO) behavior. It can be implemented using both **Array** or **Linked List**
+* ***push()***: insert an element at the top of the stack
+* ***pop()***: return and remove an element at the top of the stack
+
+[Implementation](#stack-1)
 
 ## Queue
+**Queue** is a ADT that is described by First-In-First-Out(FIFO) behavior. It can be implemented using both **Array** or **Linked List**
+* ***enque()***: insert an element at the end of the queue
+* ***deque()***: return and remove an element at the head of queue
+
+[Implementation](#stack-1)
 
 ## HashTable, HashMap
 
