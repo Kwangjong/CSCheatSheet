@@ -10,4 +10,4 @@ class Stack:
 
 	def size(self):
 		return len(self.__stack)
-# as you can see, you can use stack without implementing it using a list.
+# as you can see, you can use stack in python without implementing it using a list.
