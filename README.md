@@ -39,7 +39,7 @@ me. -- If you find any mistakes (syntax, logic, or grammar), criticisms are alwa
 
 ## Array / List
 ***Array*** stores data in sequential order. Each element can be accessed using an **index** usually starting from 0.
-
+![array](img/array.png)
 Time Complexity:
 * Indexing: O(1)
 * Search: O(n) / O(log n)
