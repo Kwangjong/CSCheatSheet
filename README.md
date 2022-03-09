@@ -38,85 +38,64 @@ me. -- If you find any mistakes (syntax, logic, or grammar), criticisms are alwa
 
 
 ## Array / List
-***Array*** or ***List*** stores data in sequential order. Each element can be accessed using an **index** usually starting from 0.
+***Array*** stores data in sequential order. Each element can be accessed using an **index** usually starting from 0.
 
 Time Complexity:
 * Indexing: O(1)
-```python
-a = ['a','b','c','d']
-
-#indexing
-print(a[2]) #prints 'c'
-```
+* Search: O(n) / O(log n)
 
 
 ## Linked List
 ***Linked List*** is a series of entries that stores the value and a pointer to the next entry. Each entry is called ***Node***. Physical placement of the ***Nodes*** does not have to be sequential.
 
-***Singly Linked List***: each Node has only one pointer pointing the next Node. Can only traverse in one direction.
-***Doubly Linked List***: each Node has two pointers: one pointing to the next Node, another pointing to the previous Node. Can traverse in both direction.
-***Circular Linked List***: "last" Node of the list points to the "first" Node of the list. Can traverse the list infinitely around the list.
-
 Time Complexity:
-* Indexing: O(N)
+* Indexing: O(n)
 * Append/Prepend: O(1)
-* Delete: O(N)
+* Delete: O(n)
 
-Getting middle element of a LinkedList with unknown length:
-* Two-Pass: Traverse the list once counting the length of the list. Then, traverse again until length/2th node.
-* One-Pass: Traverse the list using two pointers. One pointer should traverse twice as fast as the other pointer. When the faster pointer reaches the tail, return the other pointer
-### Two-Pass Solution
-```python
-def get_middle_two_pass(head):
-  length = 0
-
-  curr = head
-  while curr != None:
-    curr = curr.next
-    length += 1
-
-  curr = head
-  length /= 2
-  while length > 0:
-    curr = curr.next
-    length -= 1
-
-  return curr.val
-```
-### One-Pass Solution
-```python
-def get_middle_one_pass(head):
-  length = 0
-
-  mid, curr = head, head
-  while curr != None and curr.next != None:
-    mid = mid.next
-    curr = curr.next.next
-
-  return mid.val
-
-```
+***Singly Linked List***: each Node has only one pointer pointing to the next Node. Can only traverse in one direction.<br/>
+***Doubly Linked List***: each Node has two pointers: one pointing to the next Node, another pointing to the previous Node. Can traverse in both directions.<br/>
+***Circular Linked List***: "last" node of the list points to the "first" node of the list. Can traverse the list infinitely looping around the list.<br/>
 
 [Implementation](implementation/linked-list.py)
 
+[Getting middle element of a LinkedList with unknown length](implementation/middle-of-linked-list.py)
 
 ## Stack
-**Stack** is a ADT that is described by Last-In-Fist-Out(LIFO) behavior. It can be implemented using both **Array** or **Linked List**
+**Stack** is an ADT that is described by Last-In-Fist-Out(LIFO) behavior. It can be implemented using both **Array** or **Linked List**
 * ***push()***: insert an element at the top of the stack
 * ***pop()***: return and remove an element at the top of the stack
 
 [Implementation](implementation/stack.py)
 
+[Tracking maximum of a stack](implementation/max-stack.py)
+
 
 ## Queue
-**Queue** is a ADT that is described by First-In-First-Out(FIFO) behavior. It can be implemented using both **Array** or **Linked List**
+**Queue** is an ADT that is described by First-In-First-Out(FIFO) behavior. It can be implemented using both **Array** or **Linked List**
 * ***enque()***: insert an element at the end of the queue
 * ***deque()***: return and remove an element at the head of queue
 
 [Implementation](implementation/queue.py)
 
 
-## HashTable, HashMap
+## HashTable / HashMap
+***Hash table*** is a data structure that stores unordered items by mapping (or hashing) each item to a location in an array (or vector). It maps a unique ***key*** to an index using a ***hash function***. Each hash table array element is called ***bucket***. A common example of a ***hash function*** uses the modulo operator.
+
+Time Complexity:
+* Indexing: O(1)
+* Search: O(1)
+* Insert: O(1)
+
+***Collision handling***: Collision occurs when a ***hash function*** returns the same outputs for distinct keys.
+* ***Chaining***: a technique where each bucket has a list of items.
+* ***Open Addressing***: a technique where collisions are resolved by looking for an empty bucket elsewhere in the table.
+  * ***Linear Probing***: handles collision by linearly searching the bucket starting from the key's mapped bucket.
+  * ***Quadratic Probing***: handles collision by quadratically searches the bucket starting frolm the key's mapped bucket. <br/>
+       f(i) = (H + c1 * i + c2 * i<sup>2</sup>) % (*tablesize*), where H is the inital bucket, c1 and c2 is a programmer-defined constants.
+  * ***Double hashing***: uses two hash functions to compute bucket indices. f(i)=(h1(key) + h2(key) * i) % (tablesize).
+Iterating through a sequential *i* values to obtain the desired table is called ***probing sequence***.
+
 
 ## Tree
 
