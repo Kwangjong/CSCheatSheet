@@ -4,8 +4,12 @@
 a quick guide and study notes for basic algorithms, datastructure, and etc. basically, my summary of algorithms for core comp sci classes i tooked at the college.
 Python is used for the example codes.
 
+
+
 # Author
 me. -- If you find any mistakes (syntax, logic, or grammar), criticisms are always welcomed! Feel free to reach out to me here: choikj0903@gmail.com
+
+
 
 # Table of Content
 * [Programming Basics](#programming-basics)
@@ -20,14 +24,18 @@ me. -- If you find any mistakes (syntax, logic, or grammar), criticisms are alwa
   * [Linear Search](#linear-search--sequential-search)
   * [Binary Search](#binary-search)
 
+
+
 # Programming Basics
 
-# Data Structure
 
+
+# Data Structure
 ## Data Structure Basics
 ***Data Structure*** is a way of organizing data in a computer efficiently. Different data structures are used according to the purpose so that a computer can effectively load and store data.
 
 ***Abstract Data Type (ADT)*** is a data type described by pre-defined using user operation such as "insert data at the rear". ***ADT*** only provides what operations are defined, not how the operations are implemented. For example, ***Stack*** is a ***abstract data type***. ***Stack*** is defined by ***push()*** which inserts an element at the top of the stack and ***pop()*** which gets top-most element out of the stack.
+
 
 ## Array / List
 ***Array*** or ***List*** stores data in sequential order. Each element can be accessed using an **index** usually starting from 0.
@@ -64,12 +72,17 @@ Time Complexity:
 
 [Implementation](implementation/stack.py)
 
+
 ## Queue
 **Queue** is a ADT that is described by First-In-First-Out(FIFO) behavior. It can be implemented using both **Array** or **Linked List**
 * ***enque()***: insert an element at the end of the queue
 * ***deque()***: return and remove an element at the head of queue
 
 [Implementation](implementation/queue.py)
+
+
+## Heap
+
 
 ## HashTable, HashMap
 
@@ -82,6 +95,7 @@ Time Complexity:
 ## AVL Tree
 
 ## Graph
+
 
 
 ## Algorithm Basics
@@ -99,6 +113,7 @@ An algorithm that calls itself.
 * **Base case** is a condition that stops the recursion and evaluates the result.
 * Often used in Depth First Search
 
+
 ## Search Algorithms
 ### Linear Search / Sequential Search
 A very simple searching algorithm. It starts from one end checking every element until the desired element is found.
@@ -112,6 +127,7 @@ def LinearSearch(array, key):
       
   return -1
 ```
+
 
 ### Binary Search
 A search algorithm that repeatedly divides the search interval in half until the desired element is found or the interval is empty.
