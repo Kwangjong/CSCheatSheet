@@ -1,6 +1,6 @@
 🚧 under contruction 🚧 
 
-# Computer Science CheetSheet
+# ComputerScienceCheetSheet
 a quick guide and study notes for basic algorithms, datastructure, and etc. basically, my summary of algorithms for core comp sci classes i tooked at the college.
 Python is used for the example codes.
 
