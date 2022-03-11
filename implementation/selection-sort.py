@@ -1,5 +1,4 @@
-def selectionSort(unsorted):
-	array = unsorted[:] # duplicate list
+def selectionSort(array):
 	for i in range(len(array)):
 		smallestInd = i
 		for j in range(i+1, len(array)): # find index of the smallest elements started from i+1
@@ -7,5 +6,3 @@ def selectionSort(unsorted):
 				smallestInd = j
 
 		array[i], array[smallestInd] = array[smallestInd], array[i] # swap i and smallestInd
-
-	return array
