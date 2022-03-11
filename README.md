@@ -50,9 +50,9 @@ Time Complexity:
 ***Linked List*** is a series of entries that stores the value and a pointer to the next entry. Each entry is called ***Node***. Physical placement of the ***Nodes*** does not have to be sequential.
 
 Time Complexity:
-* Indexing: O(n)
-* Append/Prepend: O(1)
-* Delete: O(n)
+* Indexing: **O(n)**
+* Append/Prepend: **O(1)**
+* Delete: **O(n)**
 
 [Implementation](implementation/linked-list.py)
 
@@ -88,9 +88,9 @@ Time Complexity:
 ![hash-table](img/hash-table.png)
 
 Time Complexity:
-* Indexing: O(1)
-* Search: O(1)
-* Insert: O(1)
+* Indexing: **O(1)**
+* Search: **O(1)**
+* Insert: **O(1)**
 
 ***Collision handling***: Collision occurs when a ***hash function*** returns the same outputs for distinct keys.
 * ***Chaining***: a technique where each bucket has a list of items.
@@ -136,21 +136,21 @@ An algorithm that calls itself.
 ### Linear Search / Sequential Search
 A very simple searching algorithm. It starts from one end checking every element until the desired element is found.
 * It can be performed in an unsorted list.
-* Time Complexity : ***O(n)***
+* Time Complexity : **O(n)**
 ```python
 def LinearSearch(array, key):
-  for i, elem in enumerate(array):
-    if(array[i] == key):
+  for i in range(len(array)):
+    if array[i] == key:
       return i
       
-  return -1
+  return none
 ```
 
 
 ### Binary Search
 A search algorithm that repeatedly divides the search interval in half until the desired element is found or the interval is empty.
 * It can only be performed in a sorted list.
-* Time Complexity : ***O(log n)***
+* Time Complexity : **O(log n)**
 ```python
 def LinearSearch(array, key):
   left = 0
@@ -172,3 +172,27 @@ def LinearSearch(array, key):
   return -1
  ```
   
+  
+## Sorting Algorithms
+### Selection Sort
+***Selection Sort*** is a comparison based algorithms. It divides the list into a sorted part and an unsorted part, and repeatedly searches the unsorted part and "select" the smallest or greates element to move from the unsorted part to the end of the sorted part.
+* Optimized for small lists (fewer than 10-20elements).
+* It may require many comparisions for big lists.
+* Time Complexity: **O(n<sup>2</sup>)**
+
+[Implementation](implementation/selection-sort.py)
+
+
+## Insertion Sort
+***Insertion Sort*** is a comparision based algorithm that searches the sorted part for the next element in the unsorted list to be "inserted".
+* Optimized for small lists (fewer than 10-20elements).
+* It may require many comparisions for big lists.
+* It may require lesser comparision compare to ***selection sort***. ***Insertion sort*** only scans as many as it need to place ith element, while **selection sort*** always scans all elements in the unsorted part. ***Insertion sort*** is typically very efficient for list that are "nearly sorted".
+* Time Complexity: **O(n<sup>2</sup>)**
+
+[Implementation](implementation/insertion-sort.py)
+
+
+## 
+
+
