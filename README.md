@@ -136,7 +136,7 @@ An algorithm that calls itself.
 ### Linear Search / Sequential Search
 A very simple searching algorithm. It starts from one end checking every element until the desired element is found.
 * It can be performed in an unsorted list.
-* Time Complexity : **O(n)**
+* Time Complexity : **O(n<sup>2</sup>)**
 ```python
 def LinearSearch(array, key):
   for i in range(len(array)):
@@ -193,6 +193,13 @@ def LinearSearch(array, key):
 [Implementation](implementation/insertion-sort.py)
 
 
-## 
+## Quick Sort
+***Quick Sort*** is a divide and conquer algorithm that recursively partitions the input into low and high parts and sorts each of those parts. A ***pivot*** is any value within the array that divide the data into low and high parts. To partition the input, All values in the low partition are less than or equal to the pivot value, and alll the values in the high partition are greater than or equal to the pivot value. The values in each partition are not necessarily sorted.
+* It is fast for the most cases. **O(n log n)**.
+* However, if the pivot selected is the smallest or largest element, it results an uneven partitioning. If uneven partitioning happens at every level the runtime is **O(n<sup>2</sup>)**. This rarely happens.
+* Time Complexity:
+  * Average: **O(n log n)**
+  * Worst: **O(n<sup>2</sup>)**
 
+[Implementation](implementation/quick-sort.py)
 
