@@ -152,7 +152,7 @@ A search algorithm that repeatedly divides the search interval in half until the
 * It can only be performed in a sorted list.
 * Time Complexity : **O(log n)**
 
-[Implementation](implementation/binary-sort.py)
+[Implementation](implementation/binary-search.py)
   
   
 ## Sorting Algorithms
