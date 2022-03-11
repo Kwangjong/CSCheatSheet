@@ -151,26 +151,8 @@ def LinearSearch(array, key):
 A search algorithm that repeatedly divides the search interval in half until the desired element is found or the interval is empty.
 * It can only be performed in a sorted list.
 * Time Complexity : **O(log n)**
-```python
-def LinearSearch(array, key):
-  left = 0
-  right = len(array)
-  mid = 0
 
-  while left <= right:
-    mid = (left+right) // 2
-
-    if array[mid] < key:
-      left = mid + 1
-    
-    elif array[mid] > key:
-      right = mid - 1
-
-    else:
-      return mid
-
-  return -1
- ```
+[Implementation](implementation/binary-sort.py)
   
   
 ## Sorting Algorithms
@@ -202,4 +184,12 @@ def LinearSearch(array, key):
   * Worst: **O(n<sup>2</sup>)**
 
 [Implementation](implementation/quick-sort.py)
+
+## Merge Sort
+***Merge Sort*** is a divide and conquer algorithm that divides a list into two halves, recursively sorts each half and merges the sorted halves. Recursive partitioning happens until only one element is in the partition.
+* It requires additional memory during merging process.
+* It is not highly affected by the distribution of the array given.
+* Time Complexity: **O(n)**
+
+[Implementation](implementation/merge-sort.py)
 
