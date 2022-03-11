@@ -85,6 +85,8 @@ Time Complexity:
 ## HashTable / HashMap
 ***Hash table*** is a data structure that stores unordered items by mapping (or hashing) each item to a location in an array (or vector). It maps a unique ***key*** to an index using a ***hash function***. Each hash table array element is called ***bucket***. A common example of a ***hash function*** uses the modulo operator.
 
+![hash-table](img/hash-table.png)
+
 Time Complexity:
 * Indexing: O(1)
 * Search: O(1)
