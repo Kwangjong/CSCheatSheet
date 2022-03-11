@@ -25,5 +25,5 @@ def quickSort(array, left, right):
 
 	partitionIndex = partition(array, left, right) # partition the array
 
-	quickSort(array, left, partitionIndex); #recursive case
-	quickSort(array, partitionIndex+1, right);
+	quickSort(array, left, partitionIndex) #recursive case
+	quickSort(array, partitionIndex+1, right)
