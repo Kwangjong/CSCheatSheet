@@ -20,10 +20,10 @@ def partition(array, left, right): # partitions array into low and high parts
 	return j
 
 def quickSort(array, left, right):
-	if left >= right: #base-case return if less than 1 element is in the given range
+	if left >= right: #base case: return if less than 1 element is in the given range
 		return
 
 	partitionIndex = partition(array, left, right) # partition the array
 
-	quickSort(array, left, partitionIndex);
+	quickSort(array, left, partitionIndex); #recursive case
 	quickSort(array, partitionIndex+1, right);
