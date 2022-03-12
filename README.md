@@ -139,14 +139,8 @@ An algorithm that calls itself.
 A very simple searching algorithm. It starts from one end checking every element until the desired element is found.
 * It can be performed in an unsorted list.
 * Time Complexity : **O(n<sup>2</sup>)**
-```python
-def LinearSearch(array, key):
-  for i in range(len(array)):
-    if array[i] == key:
-      return i
-      
-  return none
-```
+
+![linear-search](img/linear-search.gif)
 
 
 ### Binary Search
@@ -155,6 +149,8 @@ A search algorithm that repeatedly divides the search interval in half until the
 * Time Complexity : **O(log n)**
 
 [Implementation](implementation/binary-search.py)
+
+![binary-search](img/binary-search.gif)
   
   
 ## Sorting Algorithms
@@ -166,6 +162,8 @@ A search algorithm that repeatedly divides the search interval in half until the
 
 [Implementation](implementation/selection-sort.py)
 
+![selection-sort](img/selection-sort.gif)
+
 
 ## Insertion Sort
 ***Insertion Sort*** is a comparision based algorithm that searches the sorted part for the next element in the unsorted list to be "inserted".
@@ -175,6 +173,8 @@ A search algorithm that repeatedly divides the search interval in half until the
 * Time Complexity: **O(n<sup>2</sup>)**
 
 [Implementation](implementation/insertion-sort.py)
+
+![insertion-sort](img/insertion-sort.gif)
 
 
 ## Quick Sort
@@ -187,6 +187,9 @@ A search algorithm that repeatedly divides the search interval in half until the
 
 [Implementation](implementation/quick-sort.py)
 
+![quick-sort](img/quick-sort.gif)
+
+
 ## Merge Sort
 ***Merge Sort*** is a divide and conquer algorithm that divides a list into two halves, recursively sorts each half and merges the sorted halves. Recursive partitioning happens until only one element is in the partition.
 * It requires additional memory during merging process.
@@ -194,4 +197,6 @@ A search algorithm that repeatedly divides the search interval in half until the
 * Time Complexity: **O(n)**
 
 [Implementation](implementation/merge-sort.py)
+
+![merge-sort](img/merge-sort.gif)
 
