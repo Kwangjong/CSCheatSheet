@@ -39,6 +39,7 @@ me. -- If you find any mistakes (syntax, logic, or grammar), criticisms are alwa
 
 ## Array / List
 ***Array*** stores data in sequential order. Each element can be accessed using an ***index*** usually starting from 0.
+
 ![array](img/array.png)
 
 Time Complexity:
@@ -61,6 +62,7 @@ Time Complexity:
 ***Singly Linked List***: each Node has only one pointer pointing to the next Node. Can only traverse in one direction.<br/>
 ***Doubly Linked List***: each Node has two pointers: one pointing to the next Node, another pointing to the previous Node. Can traverse in both directions.<br/>
 ***Circular Linked List***: "last" node of the list points to the "first" node of the list. Can traverse the list infinitely looping around the list.<br/>
+
 ![linked-list](img/linked-list.png)
 
 
