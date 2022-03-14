@@ -1,5 +1,3 @@
-🚧 under contruction 🚧 
-
 # ComputerScienceCheetSheet
 a quick guide and study notes for basic algorithms, datastructure, and etc. basically, my summary of algorithms for core comp sci classes i tooked at the college.
 Python is used for the example codes.
@@ -19,6 +17,8 @@ me. -- If you find any mistakes (syntax, logic, or grammar), criticisms are alwa
   * [Stack](#stack)
   * [Queue](#queue)
 * [Tree](#tree)
+  * [Binary Tree](#binary-tree)
+  * [Binary Search Tree](#binary-search-tree)
 * [Algorithm Basics](#algorithm-basics)
 * [Search Algorithms](#search-algorithms)
   * [Linear Search](#linear-search--sequential-search)
@@ -135,12 +135,23 @@ In ***Binary Tree***, each node can only have up to two child nodes (*left and r
 ![binary-tree](img/binary-tree.png)
 
 ### Binary Search Tree
+***Binary Search Tree*** is a special type if a binary tree that has an ordering property. All the keys of any nodes's left subtree are less than the node's key, and all the keys of any node's right subtree are greater than the node's key. This property can make searching a key in the tree fast.
 
-### Heap
+Time complexity:
+* Insert: **O(h)**, where h is height of BST.
+* Delete: **O(h)**
+* Searching: **O(h)**
+
+
+<!---### Heap
 
 ### AVL Tree
 
-## Graph
+### Red-Black BST
+
+### B-trees
+
+## Graph--->
 
 
 
