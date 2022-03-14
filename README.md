@@ -13,12 +13,12 @@ me. -- If you find any mistakes (syntax, logic, or grammar), criticisms are alwa
 
 # Table of Content
 * [Programming Basics](#programming-basics)
-* [Data Structure](#data-structure)
-  * [Data Structure Basics](#data-structure-basics)
+* [Data Structure Basics](#data-structure-basics)
   * [Array](#array--list)
   * [Linked List](#linked-list)
   * [Stack](#stack)
   * [Queue](#queue)
+* [Tree](#tree)
 * [Algorithm Basics](#algorithm-basics)
 * [Search Algorithms](#search-algorithms)
   * [Linear Search](#linear-search--sequential-search)
@@ -35,7 +35,6 @@ me. -- If you find any mistakes (syntax, logic, or grammar), criticisms are alwa
 
 
 
-# Data Structure
 ## Data Structure Basics
 ***Data Structure*** is a way of organizing data in a computer efficiently. Different data structures are used according to the purpose so that a computer can effectively load and store data.
 
@@ -110,14 +109,36 @@ Iterating through a sequential *i* values to obtain the desired table is called 
 
 
 ## Tree
+***Tree*** is an ADT that simulates hiearchial structure by a set of linked nodes. Each Node stores its value and sets of its "child" nodes.
 
-## Binary Tree
+![tree](img/tree-1.png)
 
-## Binary Search Tree
+* ***Parent and Child Node***: A link between the nodes in the tree are described with a parent-child relationship. If Node 'A' stores pointers to the Node 'B'. Node 'A' is a parent of Node 'B', and Node 'B' is a child of Node 'A'.
+* ***Root***: A node with no parent. There can be only one root node in a tree.
+* ***Leaf***: a tree node with no children.
+* ***Internal node***: a node with at least one child.
 
-## Heap
+![tree](img/tree-2.png)
 
-## AVL Tree
+* ***Edge***: a link from a node to a child
+* ***Depth***: the number of edges from the root to the node
+* ***Level***: all nodes with the same depth
+* ***Height***: the largest depth of any node.
+
+
+### Binary Tree
+In ***Binary Tree***, each node can only have up to two child nodes (*left and right child*).
+* A binary tree is ***full*** if every node contains 0 or 2 child nodes.
+* A binary tree is ***complete*** if all level, except the last level, are full and all node in the last level are as far left as possible.
+* A binary tree is ***perfect*** if all internal node have 2 child nodes and all leaf nodes are at the same level.
+
+![binary-tree](img/binary-tree.png)
+
+### Binary Search Tree
+
+### Heap
+
+### AVL Tree
 
 ## Graph
 
@@ -170,7 +191,7 @@ A search algorithm that repeatedly divides the search interval in half until the
 ![selection-sort](img/selection-sort.gif)
 
 
-## Insertion Sort
+### Insertion Sort
 ***Insertion Sort*** is a comparision based algorithm that searches the sorted part for the next element in the unsorted list to be "inserted".
 * Optimized for small lists (fewer than 10-20elements).
 * It may require many comparisions for big lists.
@@ -182,7 +203,7 @@ A search algorithm that repeatedly divides the search interval in half until the
 ![insertion-sort](img/insertion-sort.gif)
 
 
-## Quick Sort
+### Quick Sort
 ***Quick Sort*** is a divide and conquer algorithm that recursively partitions the input into low and high parts and sorts each of those parts. A ***pivot*** is any value within the array that divide the data into low and high parts. To partition the input, All values in the low partition are less than or equal to the pivot value, and alll the values in the high partition are greater than or equal to the pivot value. The values in each partition are not necessarily sorted.
 * It is fast for the most cases. **O(n log n)**.
 * However, if the pivot selected is the smallest or largest element, it results an uneven partitioning. If uneven partitioning happens at every level the runtime is **O(n<sup>2</sup>)**. This rarely happens.
@@ -195,7 +216,7 @@ A search algorithm that repeatedly divides the search interval in half until the
 ![quick-sort](img/quick-sort.gif)
 
 
-## Merge Sort
+### Merge Sort
 ***Merge Sort*** is a divide and conquer algorithm that divides a list into two halves, recursively sorts each half and merges the sorted halves. Recursive partitioning happens until only one element is in the partition.
 * It requires additional memory during merging process.
 * It is not highly affected by the distribution of the array given.
