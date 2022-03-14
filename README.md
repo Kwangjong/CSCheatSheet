@@ -23,6 +23,11 @@ me. -- If you find any mistakes (syntax, logic, or grammar), criticisms are alwa
 * [Search Algorithms](#search-algorithms)
   * [Linear Search](#linear-search--sequential-search)
   * [Binary Search](#binary-search)
+*[Sorting Algorithms](#sorting-algorithms)
+  *[Selection Sort](#selction-sort)
+  *[Insertion Sort](#insertion-sort)
+  *[Quick Sort](#quick-sort)
+  *[Merge Sort](#merge-sort)
 
 
 
