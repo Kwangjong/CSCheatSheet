@@ -5,7 +5,8 @@ Python is used for the example codes.
 
 
 # Author
-me. -- If you find any mistakes (syntax, logic, or grammar), criticisms are always welcomed! Feel free to reach out to me here: choikj0903@gmail.com
+me. all implementations and visual aids are made by me.
+-- If you find any mistakes (syntax, logic, or grammar), criticisms are always welcomed! Feel free to reach out to me here: choikj0903@gmail.com
 
 
 
