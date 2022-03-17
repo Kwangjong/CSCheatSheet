@@ -28,6 +28,7 @@ me. -- If you find any mistakes (syntax, logic, or grammar), criticisms are alwa
   * [Insertion Sort](#insertion-sort)
   * [Quick Sort](#quick-sort)
   * [Merge Sort](#merge-sort)
+* [Others](#others)
 
 
 
@@ -243,3 +244,5 @@ A search algorithm that repeatedly divides the search interval in half until the
 
 ![merge-sort](img/merge-sort.gif)
 
+## Others
+### [Minimax](https://github.com/Kwangjong/Unbeatable-TicTacToe#minimax-algorithm)
