@@ -151,6 +151,12 @@ Time complexity:
 
 ### B-trees
 
+traversal
+depth first search
+-preorder, inorder, postorder
+breath first search
+-level-order
+
 ## Graph--->
 
 
