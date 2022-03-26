@@ -29,11 +29,27 @@ me. all implementations and visual aids are made by me.
   * [Insertion Sort](#insertion-sort)
   * [Quick Sort](#quick-sort)
   * [Merge Sort](#merge-sort)
-* [Others](#others)
 
 
 
 # Programming Basics
+Collection of some fundamental concepts in programming.
+
+## Memory Regions
+There are four different regions in a typical program's memory.
+
+***Code***: the region where the instructions are stored.<br/>
+***Static***: the region where static fields are allocated. The data in this region are allocated only once during the execution of the program.<br/>
+***Stack***: a linear memory region where a function calls and its local variables are stored. It is allocated when the functions or methods are called and de-allocates when it returns.<br/>
+***Heap***: the memory region available for programmers to allocate and de-allocate freely. Data in the heap is accessible to all threads. When an object is created, the object is allocated in the **heap**, and the reference to the object is stored in the **stack**.
+
+![memory-regions](https://kwangjong.github.io/CSCheatSheet/img/memory-regions.png)
+
+### Garbage Collectiom
+When heap memory is handled poorly by the programmer, issues like out-of-memory or memory leaks can happen. Most high-level languages use an automatic memory management mechanism called ***Garbage Collection***. It searches for unused data in heap and de-allocates them.
+
+To determine which unnecessary data for **Garbage Collector** to de-allocate, the program needs to keep track of which objects are being used. Programming languages like Java and Python use a technique called ***reference counting***. 
+The program keeps track of the number of reference variables that are currently referring to an object. If the reference count is zero the object is considered **unreachable object** which is freed by the **garbage collector**.
 
 
 
@@ -244,6 +260,3 @@ A search algorithm that repeatedly divides the search interval in half until the
 [Implementation](implementation/merge-sort.py)
 
 ![merge-sort](img/merge-sort.gif)
-
-## Others
-### [Minimax](https://github.com/Kwangjong/Unbeatable-TicTacToe#minimax-algorithm)
