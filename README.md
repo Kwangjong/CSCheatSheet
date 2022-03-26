@@ -41,8 +41,8 @@ There are four different regions in a typical program's memory.
 
 ***Code***: the region where the instructions are stored.<br/>
 ***Static***: the region where static fields are allocated. The data in this region are allocated only once during the execution of the program.<br/>
-***Stack***: a linear memory region where a function calls and its local variables are stored. It is allocated when the functions or methods are called and de-allocates when it returns.<br/>
-***Heap***: the memory region available for programmers to allocate and de-allocate freely. Data in the heap is accessible to all threads. When an object is created, the object is allocated in the **heap**, and the reference to the object is stored in the **stack**.
+***Stack***: a linear memory region where a function calls and its local variables are stored. It is allocated when the functions or methods are called and de-allocates when it returns. **Stack** expands downwards from high address to low address.<br/>
+***Heap***: the memory region available for programmers to allocate and de-allocate freely. Data in the heap is accessible to all threads. When an object is created, the object is allocated in the **heap**, and the reference to the object is stored in the **stack**. **Heap** expands upwards from low address to high address. 
 
 ![memory-regions](https://kwangjong.github.io/CSCheatSheet/img/memory-regions.png)
 
