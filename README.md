@@ -12,6 +12,7 @@ me. all implementations and visual aids are made by me.
 
 # Table of Content
 * [Programming Basics](#programming-basics)
+  * [Memory Regions](#memory-regions)
 * [Data Structure Basics](#data-structure-basics)
   * [Array](#array--list)
   * [Linked List](#linked-list)
