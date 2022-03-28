@@ -121,7 +121,7 @@ class Cat extends Animal {
 
 }
 
-class Main {
+class OOP {
 	public static void main(String[] args) {
 		// subtyping
 		Animal[] animal = new Animal[2];
