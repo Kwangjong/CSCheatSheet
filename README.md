@@ -12,6 +12,8 @@ me. all implementations and visual aids are made by me.
 
 # Table of Content
 * [Programming Basics](#programming-basics)
+  * [Procedural Programming vs Object-Oriented Programming](#procedural-programming-vs-object-oriented-programming)
+  * [Fundamentals of Object-Oriented Programming](#fundamentals-of-object-oriented-programming)
   * [Memory Regions](#memory-regions)
 * [Data Structure Basics](#data-structure-basics)
   * [Array](#array--list)
