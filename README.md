@@ -1,14 +1,12 @@
 # ComputerScienceCheatSheet
 a quick guide and study notes for basic algorithms, datastructure, and etc. basically, my summary for core comp sci classes i tooked at the college.
-Python and Java is used for the example codes. [READ HERE](kwangjong.github.io/cscheatsheet)
+Python and Java is used for the example codes. 
 
-
+[SEE FULL BLOG SERIES HERE](https://kwangjong.github.io/cscheatsheet)
 
 # Author
 me. all implementations and visual aids are made by me.
 -- If you find any mistakes (syntax, logic, or grammar), criticisms are always welcomed! Feel free to reach out to me here: choikj0903@gmail.com
-
-
 
 # Table of Content
 * [Programming Basics](#programming-basics)
@@ -32,8 +30,6 @@ me. all implementations and visual aids are made by me.
   * [Insertion Sort](#insertion-sort)
   * [Quick Sort](#quick-sort)
   * [Merge Sort](#merge-sort)
-
-
 
 # Programming Basics
 Collection of some basics in programming.
