@@ -33,8 +33,8 @@ def post_order(node):
 		return ""
 
 	output = node.val
-	output += pre_order(node.right)
 	output += pre_order(node.left)
+	output += pre_order(node.right)
 	
 	return output
 
@@ -49,9 +49,9 @@ def level_order(root):
 		if curr is not None:
 			output += curr.val
 
-			queue.insert(0, curr.left)
+			queue.insert(0, curr.righ)
 			queue.insert(0, curr.right)
-	
+
 	return output
 
 
