@@ -81,7 +81,7 @@ curr = root.right #C
 curr.left = Node("F")
 curr.right = Node("G")
 
-curr = curr.right	#G
+curr = curr.right #G
 curr.left = Node("J")
 
 
