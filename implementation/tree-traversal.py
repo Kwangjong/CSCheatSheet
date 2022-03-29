@@ -51,8 +51,7 @@ def level_order(root):
 
 			queue.insert(0, curr.left)
 			queue.insert(0, curr.right)
-
-			
+	
 	return output
 
 
