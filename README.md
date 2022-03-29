@@ -30,6 +30,9 @@ me. all implementations and visual aids are made by me.
   * [Insertion Sort](#insertion-sort)
   * [Quick Sort](#quick-sort)
   * [Merge Sort](#merge-sort)
+* [Tree Traversal](#tree-traversal)
+  * [Breath-First Search](#breath-first-search) 
+  * [Depth-First Search](#depth-first-search) 
 
 # Programming Basics
 Collection of some basics in programming.
@@ -333,3 +336,30 @@ A search algorithm that repeatedly divides the search interval in half until the
 [Implementation](implementation/merge-sort.py)
 
 ![merge-sort](img/merge-sort.gif)
+
+
+## Tree Traversal
+Traversing a tree can be classified into two categories: ***Breath-First Search*** and ***Depth-First Search***.
+
+### Breath-First Search
+***Breath-First Search*** is also known as ***level-order traversal***. Starting from the root of the tree, it visits the nodes in the same level first then moves on to nodes in the next level. It is commonly implemented using a queue.
+
+![bfs](https://kwangjong.github.io/CSCheatSheet/img/bfs.png)
+
+[Implementation](https://github.com/Kwangjong/CSCheatSheet/blob/main/implementation/tree-traversal.py)
+
+### Depth-First Search
+***Depth-First Search*** visits the deepest node in each branch before moving on to the other branches. **DFS** can be implemented using the recursive algorithm. At each node, the algorithm visits the left node, right node, and current node according to the order it is implemented. 
+
+There are three different order in which **DFS** can be implemented: **pre-order**, **in-order**, and **post-order**.<br/>
+**Pre-order** visits current node first, then visits left-node and right node respectively.<br/>
+**In-order** visits left node, current node, and right node in order.<br/>
+**Post-order** visits left node and right node first, then visits the current node. 
+
+Refer to the diagram below. Let's assume the algorithm returns a string of letters in the order it traverses. 
+
+![bfs](https://kwangjong.github.io/CSCheatSheet/img/bfs.png)
+
+When traversing the tree above using **pre-order**, the resulting output of the traversal is "ABDEHICFGJ". For **in-order**, the output is "BDEHIACFGJ". **Post-order** outputs "ACFGJBDEHI".
+
+[Implementation](https://github.com/Kwangjong/CSCheatSheet/blob/main/implementation/tree-traversal.py)
