@@ -28,7 +28,7 @@ def mergeSort(array, left, right):
 	if left >= right: # base-case
 		return
 
-	mid = left + (right - left) / 2
+	mid = left + (right - left) // 2
 
 	mergeSort(array, left, mid) # recursive-case
 	mergeSort(array, mid+1, right)
