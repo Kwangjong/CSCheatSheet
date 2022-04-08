@@ -1,0 +1,113 @@
+A ***graph*** is a data structure for representing connections among items, and consists of vertices connected by edges.
+
+- ***vertex***: a nide or an item in a graph.
+- ***edge***: connection between two vertices.
+
+    A ——— B ——— C
+   / \          |
+  /   \         |
+ /     \        |
+D       E ————— F
+ \     /        |
+  \   /         |
+   \ /          |
+    G           H ——— I
+
+### Adjacency and Paths
+
+- Two vertices are **adjacent** connected by an edge.
+- A **path** is a sequence of edges leading from a source to destination in a graph. Its **length** is the number of edges in the path.
+- The **distance** between two vertices is the length of the shortest path between the vertices.
+- ex) A and B are adjacent. distance between A and D is two.
+
+### Graph representations
+
+Adjacency list
+
+A ——— B ——— C
+|     | \
+|     |  \
+|     |   \ 
+D ——— E     F
+
+Adjacency matrices
+
+  A B C D E F
+A 0 1 0 1 0 0
+B 1 0 1 0 1 1
+C 0 1 0 0 0 0
+D 1 0 0 0 1 0
+E 0 1 0 1 0 0
+F 0 1 0 0 0 0
+
+### Graph traversal
+
+Breath-First Search:
+
+from starting vertex, visit vertices with distance 1 and then 2 and so on.
+
+    A ——— B ——— C
+   / \          |
+  /   \         |
+ /     \        |
+D       E ————— F
+ \     /        |
+  \   /         |
+   \ /          |
+    G           H ——— I
+
+A → B D E → C F G → H → I
+
+ex) friend recommendation program, peer to peer network
+
+In BFS vertex it said to be **discovered** when encountered by the algorithm. Vertices in the queue are **frontier.**
+
+implemented using queue
+
+Depth-First Search
+
+traversal visits a starting vertex, then visits every vertex along each path until the end of the path is reached. Then it backtracks visited all other vertices left.
+
+    A ——— B ——— C
+   / \          |
+  /   \         |
+ /     \        |
+D       E ————— F
+ \     /        |
+  \   /         |
+   \ /          |
+    G           H ——— I
+
+implemented using stack
+
+### Directed Graph
+
+graph which vertices are connected with **directed edges**
+
+in directed graph, B is adjacent to A if there is an edge from A to B, not the other way around.
+
+- **path** is a sequence of directed edges leading from the source to destination vertices
+- **cycle** is path that returns to the started vertex.
+- **Cyclic** graph contains cycle, **acyclic** graph does not contain a cycle.
+
+A ——> B ——> C
+/     | <
+|     |  \
+|     \   \
+D <—— E     F
+
+### Weighted graphs
+
+in weighted graphs each edges has a **weight** or **cost**. The **path length** is the sum of edges weights in the path.
+
+### Dijkstra’s shortest path algorithm
+
+An algorithm that determines the shortest path from a starting vertex to each vertex in a graph
+
+### Bellman-Ford’s shortest path algorithm
+
+### Topological sorting
+
+### Minimum spanning tree
+
+### All pairs shortest path
