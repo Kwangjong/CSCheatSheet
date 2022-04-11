@@ -15,9 +15,6 @@ def bfs(start, graph):
   return discovered
 
 
-
-
-
 def dfs(start, graph):
   stack =[start]
   discovered = []
@@ -37,16 +34,12 @@ def dfs(start, graph):
 
 
 graph = { 
-  'A' : ['B', 'D', 'E'], 
-  'B' : ['A', 'C'],
-  'C' : ['B', 'F'],
-  'D' : ['A', 'G'],
-  'E' : ['A', 'F', 'G'],
-  'F' : ['C', 'E', 'H'],
-  'G' : ['D', 'E'],
-  'H' : ['F', 'I'],
-  'I' : ['H'],}
+  'A' : ['B'], 
+  'B' : ['C', 'E'],
+  'C' : ['F'],
+  'D' : [],
+  'E' : ['A', 'D'],
+  'F' : [],}
 
-print(bfs('A', graph))
-
-print(dfs('A', graph))
+print(' '.join(bfs('A', graph))) #A B C E F D
+print(' '.join(dfs('A', graph))) #A B C F E D
